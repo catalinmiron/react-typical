@@ -1,4 +1,4 @@
-# react-typical
+# react-typical - [DEMO](https://catalinmiron.github.io/react-typical/)
 
 > React Animated typing in ~400 bytes 🐡 of JavaScript.
 
