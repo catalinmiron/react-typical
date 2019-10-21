@@ -2,7 +2,7 @@ body {
   background: #111;
   color: #f0f0f0;
   display: grid;
-  font-family: monospace;
+  font-family: monospace !important;
   font-size: 24px;
   height: 100vh;
   margin: 0;

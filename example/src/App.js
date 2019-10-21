@@ -3,14 +3,15 @@ import Typical from 'react-typical'
 
 
 const steps = [
-  'Hello 👋', 2000,
-  'I am react-typical', 2000,
-  'I can support emoji 👌', 2000,
-  'I can only delete what needs deleting', 2000,
+  'Hello 👋', 1000,
+  'I am react-typical', 1000,
+  'I can support emoji 👌', 1000,
+  'I can only delete what needs deleting', 1000,
   'I can pause', 4000,
-  'I can loop', 2000,
+  'I can loop', 1000,
   'I can wait', 3000,
   'I can vary typing speed', 2000,
+  'Install me now', 1000,
   'npm install --save react-typical'
 ];
 export default class App extends Component {
