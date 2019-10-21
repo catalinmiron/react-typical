@@ -1,8 +1,8 @@
-/* add css styles here (optional) */
+.typicalWrapper::after {
+  content: "|";
+  animation: blink 1s infinite step-start;
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+@keyframes blink {
+  50% { opacity: 0; }
 }

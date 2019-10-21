@@ -1,22 +1,27 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+
+import React, { useRef, useEffect } from "react";
+import { type, type as loopedType } from "@camwiegert/typical";
 
 import styles from './styles.css'
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
+export default function Typical({ steps, loop, className, wrapper = "p" }) {
+  const typicalRef = useRef(null);
+  const Component = wrapper;
 
-  render() {
-    const {
-      text
-    } = this.props
+  useEffect(() => {
+    if (loop === Infinity) {
+      type(typicalRef.current, ...steps, loopedType);
+    } else if (typeof loop === "number") {
+      type(
+        typicalRef.current,
+        ...Array(loop)
+          .fill(steps)
+          .flat()
+      );
+    } else {
+      type(typicalRef.current, ...steps);
+    }
+  });
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+  return <Component ref={typicalRef} className={styles.typicalWrapper}/>;
 }
