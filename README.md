@@ -8,6 +8,8 @@ Based on awesome typical library by [@camwiegert](https://github.com/camwiegert/
 
 [![NPM](https://img.shields.io/npm/v/react-typical.svg)](https://www.npmjs.com/package/react-typical) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[![React-Typical - Animated typing without the headaches](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=172069&theme=dark)](https://www.producthunt.com/posts/react-typical?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-react-typical)
+
 ## Install
 
 ```bash
