@@ -10,7 +10,7 @@ export default function Typical({ steps, loop, className, wrapper = "p" }) {
   const classNames = [styles.typicalWrapper];
   
   if (className) {
-    classNames.push(className);
+    classNames.unshift(className);
   }
 
   useEffect(() => {
