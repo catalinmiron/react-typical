@@ -7,6 +7,11 @@ import styles from './styles.css'
 const Typical = ({ steps, loop, className, wrapper = "p" }) => {
   const typicalRef = useRef(null);
   const Component = wrapper;
+  const classNames = [styles.typicalWrapper];
+  
+  if (className) {
+    classNames.unshift(className);
+  }
 
   useEffect(() => {
     if (loop === Infinity) {
@@ -23,7 +28,7 @@ const Typical = ({ steps, loop, className, wrapper = "p" }) => {
     }
   });
 
-  return <Component ref={typicalRef} className={styles.typicalWrapper}/>;
+  return <Component ref={typicalRef} className={classNames.join(' ')}/>;
 }
 
 export default memo(Typical)
