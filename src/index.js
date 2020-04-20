@@ -26,7 +26,7 @@ const Typical = ({ steps, loop, className, wrapper = "p" }) => {
     } else {
       type(typicalRef.current, ...steps);
     }
-  });
+  }, [typicalRef]);
 
   return <Component ref={typicalRef} className={classNames.join(' ')}/>;
 }
