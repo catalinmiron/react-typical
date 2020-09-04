@@ -45,8 +45,9 @@ class Example extends React.Component {
 prop|mandatory|type|Eg.
 |--|--|--|--|
 |`steps`|yes|[]|`['Hello', 1000, 'World']`
-|`wrapper`|no|string|'p'
+|`wrapper`|no|string|'p'|
 |`loop`|no|number|`3`|
+|`className`|no|string|'active'|
 
 
 ## License
