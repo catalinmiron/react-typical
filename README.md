@@ -24,14 +24,14 @@ npm install --save react-typical
 ## Usage
 
 ```jsx
-import React, { Component, useMemo } from 'react'
+import React, { Component, useRef } from 'react'
 import Typical from 'react-typical'
 
 class Example extends React.Component {
   render () {
     return (
       <Typical
-        steps={useMemo(['Hello', 1000, 'Hello world!', 500], [])}
+        steps={useRef(['Hello', 1000, 'Hello world!', 500]).current}
         loop={Infinity}
         wrapper="p"
       />
