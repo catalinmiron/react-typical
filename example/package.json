@@ -8,7 +8,7 @@
     "prop-types": "^15.6.2",
     "react": "file:../node_modules/react",
     "react-dom": "^16.4.1",
-    "react-scripts": "^3.2.0",
+    "react-scripts": "^5.0.1",
     "react-typical": "file:../"
   },
   "scripts": {
